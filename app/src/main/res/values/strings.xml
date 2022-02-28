@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Navigation Component</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+</resources>
