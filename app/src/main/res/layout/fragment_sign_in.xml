@@ -21,6 +21,7 @@
                 android:layout_marginBottom="@dimen/_20dp"
                 android:background="@drawable/bg_edittext_pink_stroked"
                 android:hint="@string/phone_number"
+                android:textSize="@dimen/text_size_h7"
                 android:importantForAutofill="no"
                 android:inputType="phone"
                 android:textColor="@color/black3" />
@@ -32,6 +33,7 @@
                 android:layout_marginBottom="@dimen/_40dp"
                 android:background="@drawable/bg_edittext_pink_stroked"
                 android:hint="@string/password"
+                android:textSize="@dimen/text_size_h7"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:textColor="@color/black3" />
@@ -39,9 +41,10 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSignIn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_52dp"
                 android:background="@drawable/bg_button_pink"
                 android:text="@string/sign_in"
+                android:textSize="@dimen/text_size_h7"
                 android:textColor="@color/white" />
 
         </LinearLayout>
