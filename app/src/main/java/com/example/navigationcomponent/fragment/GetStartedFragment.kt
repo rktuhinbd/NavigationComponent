@@ -18,8 +18,13 @@ class GetStartedFragment : Fragment() {
         binding = FragmentGetStartedBinding.inflate(inflater, container, false)
 
         binding.btnSignIn.setOnClickListener {
-//            val navAction = SignInFragmentDirections.actionSignInFragmentToSignUpFragment()
-//            findNavController().navigate(navAction)
+            val navAction = GetStartedFragmentDirections.actionGetStartedFragmentToSignInFragment()
+            findNavController().navigate(navAction)
+        }
+
+        binding.btnSignUp.setOnClickListener {
+            val navAction = GetStartedFragmentDirections.actionGetStartedFragmentToSignUpFragment()
+            findNavController().navigate(navAction)
         }
 
         return binding.root

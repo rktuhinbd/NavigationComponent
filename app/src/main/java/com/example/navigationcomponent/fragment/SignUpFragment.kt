@@ -1,24 +1,32 @@
 package com.example.navigationcomponent.fragment
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.navigationcomponent.R
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.navigationcomponent.activity.HomeActivity
+import com.example.navigationcomponent.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private lateinit var binding: FragmentSignUpBinding
 
-    }
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        binding = FragmentSignUpBinding.inflate(inflater, container, false)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
+        binding.btnSignUp.setOnClickListener {
+            val intent = Intent(requireActivity(), HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvSignIn.setOnClickListener {
+            val navAction = SignUpFragmentDirections.actionSignUpFragmentToSignInFragment()
+            findNavController().navigate(navAction)
+        }
+
+        return binding.root
     }
 }

@@ -3,25 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navGraph"
-    app:startDestination="@+id/sign_in_fragment">
+    app:startDestination="@+id/getStartedFragment">
 
     <fragment
-        android:id="@+id/sign_in_fragment"
-        android:name="com.example.navigationcomponent.fragment.SignInFragment"
-        android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" >
+        android:id="@+id/getStartedFragment"
+        android:name="com.example.navigationcomponent.fragment.GetStartedFragment"
+        android:label="GetStartedFragment"
+        tools:layout="@layout/fragment_get_started">
         <action
-            android:id="@+id/action_sign_in_fragment_to_sign_up_fragment"
-            app:destination="@id/sign_up_fragment"
+            android:id="@+id/action_getStartedFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+
     <fragment
-        android:id="@+id/sign_up_fragment"
+        android:id="@+id/signInFragment"
+        android:name="com.example.navigationcomponent.fragment.SignInFragment"
+        android:label="FragmentSignIn"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
         android:name="com.example.navigationcomponent.fragment.SignUpFragment"
-        android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        android:label="FragmentSignUp"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
 </navigation>
