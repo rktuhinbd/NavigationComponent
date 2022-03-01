@@ -23,7 +23,7 @@
                 android:background="@drawable/bg_button_pink"
                 android:text="@string/sign_in"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_size_h6" />
+                android:textSize="@dimen/text_size_h7" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSignUp"
@@ -33,7 +33,7 @@
                 android:background="@drawable/bg_button_pink"
                 android:text="@string/sign_up"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_size_h6" />
+                android:textSize="@dimen/text_size_h7" />
 
         </LinearLayout>
 
