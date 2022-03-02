@@ -20,9 +20,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_52dp"
                 android:layout_marginBottom="@dimen/_36dp"
-                android:background="@drawable/bg_button_pink"
+                android:background="@drawable/bg_button_black"
                 android:text="@string/sign_in"
-                android:textColor="@color/white"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h7" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -30,9 +30,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_52dp"
                 android:layout_marginBottom="@dimen/_36dp"
-                android:background="@drawable/bg_button_pink"
+                android:background="@drawable/bg_button_black"
                 android:text="@string/sign_up"
-                android:textColor="@color/white"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h7" />
 
         </LinearLayout>

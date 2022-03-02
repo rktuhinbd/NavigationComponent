@@ -20,11 +20,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48dp"
                 android:layout_marginBottom="@dimen/_20dp"
-                android:background="@drawable/bg_edittext_pink_stroked"
+                android:background="@drawable/bg_edittext_black_stroked"
                 android:hint="@string/name"
                 android:importantForAutofill="no"
                 android:inputType="text"
-                android:textColor="@color/black3"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h8" />
 
             <EditText
@@ -32,12 +32,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48dp"
                 android:layout_marginBottom="@dimen/_20dp"
-                android:background="@drawable/bg_edittext_pink_stroked"
+                android:background="@drawable/bg_edittext_black_stroked"
                 android:hint="@string/phone_number"
                 android:importantForAutofill="no"
                 android:inputType="phone"
                 android:maxLength="11"
-                android:textColor="@color/black3"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h8" />
 
             <EditText
@@ -45,11 +45,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48dp"
                 android:layout_marginBottom="@dimen/_40dp"
-                android:background="@drawable/bg_edittext_pink_stroked"
+                android:background="@drawable/bg_edittext_black_stroked"
                 android:hint="@string/email_address"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black3"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h8" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -57,9 +57,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_16dp"
-                android:background="@drawable/bg_button_pink"
+                android:background="@drawable/bg_button_black"
                 android:text="@string/sign_up"
-                android:textColor="@color/white"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h7" />
 
             <TextView

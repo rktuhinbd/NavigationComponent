@@ -20,11 +20,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48dp"
                 android:layout_marginBottom="@dimen/_20dp"
-                android:background="@drawable/bg_edittext_pink_stroked"
+                android:background="@drawable/bg_edittext_black_stroked"
                 android:hint="@string/phone_number"
                 android:importantForAutofill="no"
                 android:inputType="phone"
-                android:textColor="@color/black3"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h8" />
 
             <EditText
@@ -32,11 +32,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_48dp"
                 android:layout_marginBottom="@dimen/_40dp"
-                android:background="@drawable/bg_edittext_pink_stroked"
+                android:background="@drawable/bg_edittext_black_stroked"
                 android:hint="@string/password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:textColor="@color/black3"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h8" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -44,9 +44,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_52dp"
                 android:layout_marginBottom="@dimen/_16dp"
-                android:background="@drawable/bg_button_pink"
+                android:background="@drawable/bg_button_black"
                 android:text="@string/sign_in"
-                android:textColor="@color/white"
+                android:textColor="@color/colorGold"
                 android:textSize="@dimen/text_size_h7" />
 
             <TextView
